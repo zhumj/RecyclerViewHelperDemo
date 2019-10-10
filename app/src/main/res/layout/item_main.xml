@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		app:cardBackgroundColor="@color/colorPrimary"
+		app:cardElevation="0dp"
+		app:cardCornerRadius="6dp"
+		app:contentPadding="12dp">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+		<TextView
+				android:id="@+id/tvTitle"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/white"
+				android:textSize="17sp"
+				android:text="Title"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent"/>
+
+		<TextView
+				android:id="@+id/tvBody"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:textColor="@android:color/white"
+				android:textSize="14sp"
+				android:text="Body"
+				android:layout_marginTop="10dp"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
